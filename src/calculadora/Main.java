@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 /**
  * En la clase Main se contruye toda la interfaz con la que el usuario va a interactuar
- * con la biblioteca y el reproductor de musica, tambien se contruye aqui la parte trasera
- * del sistema donde se indica que accion se tomara cuando el usuario solicite una determinada
- * funcion.
  *
  * @version 1.00.000 15-04-2023
  *
@@ -40,7 +37,7 @@ public class Main {
     }
 
     /**
-     * Este metodo se encarga de solicitar y guardar los dos valores con los cuales se desea calcular laoperacion
+     * Este metodo se encarga de solicitar y guardar los dos valores con los cuales se desea calcular la operacion
      */
     public static void pedirDatos(String operacion){
         Scanner input = new Scanner(System.in);
@@ -68,7 +65,7 @@ public class Main {
          */
         do {
             /**
-             * Se muestra el menu principal alusuario.
+             * Se muestra el menu principal al usuario.
              * Se captura la opcion ingresada por el usuario en la variable "opcion"
              */
             menuPrincipal();
@@ -80,7 +77,7 @@ public class Main {
              * operacion seleccionada por el usuario e instanciar de forma adecuada el objeto operaciones y de
              * estar manera realizar el calulo solicitado.
              *
-             * de igualmanera, en estas acciones se realizan las validaciones pertinentes segun el caso,
+             * de igual manera, en estas acciones se realizan las validaciones pertinentes segun el caso,
              * como por ejemplo la no  division por cero.
              */
             switch (opcion){
@@ -110,7 +107,7 @@ public class Main {
                         System.out.println("\n\n RESULTADO: " + dato1 + " / " + dato2 + " = " + operacionDivision.getResultado());
 
                     } else {
-                        System.out.println("No se permite la division por cero");
+                        System.out.println("\n\nNo se permite la division por cero\n\n");
                     }
                     break;
                 case 5:
@@ -124,8 +121,6 @@ public class Main {
                         System.out.println("\n\nNo se permite la division por cero\n\n");
                     }
                     break;
-                default:
-                    System.out.println("\n\nLa opcion ingresada no esta contemplada en nuestro sistema\n\n");
             }
 
         }while (opcion != 6);

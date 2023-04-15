@@ -66,7 +66,6 @@ public class Operaciones {
             case "modulo":
                 resultado = dato1 % dato2;
                 break;
-
             default:
                 System.out.println("operacion incorrecta");
                 break;
